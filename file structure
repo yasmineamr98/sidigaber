@@ -1,0 +1,24 @@
+>>frontend 
+-home page [kitchen/raw meat]
+-header
+-footer
+-about
+-contact
+-review 
+-kitchen 
+-raw meat
+
+>>backend 
+
+-login
+-users admins only
+dashboard 
+[
+    tab users, [name,email,password,mobile]
+    tab kitchen, [item name, item price, item picture, review[multiple], descrption ]
+    tab raw meat, [item name, item price, item picture, review[multiple],description ]
+    tab kitchen menu,
+    tab raw meat menu,
+    tab most selling,
+    tab review,
+]
