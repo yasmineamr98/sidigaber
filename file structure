@@ -32,3 +32,18 @@ dashboard
  [kitchen tablewith these attributes:[item name, item price, item picture, review[multiple], descrption] ]
  [raw meat table with these attributes: [item name, item price, item picture, review[multiple],description] ]
  [review table with these attributes: [name,email,review,rating]]
+
+
+
+my project file structure in backend using laravel is 
+Dashboard controller
+User controller
+
+models user php
+views 
+dashboard blade
+login blade
+sidebar blade
+user/index blade 
+
+routes web php
