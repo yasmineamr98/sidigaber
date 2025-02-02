@@ -14,7 +14,7 @@
 -users admins only
 dashboard 
 [
-    tab users, [name,email,password,mobile]
+    tab admin, [name,email,password,mobile]
     tab kitchen, [item name, item price, item picture, review[multiple], descrption ]
     tab raw meat, [item name, item price, item picture, review[multiple],description ]
     tab kitchen menu,
@@ -22,3 +22,13 @@ dashboard
     tab most selling,
     tab review,
 ]
+
+
+
+-install laravel 
+-initialze laravel project named Sidigaber 
+-create database for our project using migrations 
+ [ admin table with these attributes:name,email,password,mobile ]
+ [kitchen tablewith these attributes:[item name, item price, item picture, review[multiple], descrption] ]
+ [raw meat table with these attributes: [item name, item price, item picture, review[multiple],description] ]
+ [review table with these attributes: [name,email,review,rating]]
