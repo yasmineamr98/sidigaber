@@ -7,13 +7,22 @@
             <a href="{{ route('dashboard') }}" class="text-white d-block py-2 px-4">Dashboard</a>
         </li>
         <li>
-            <a href="{{ route('profile') }}" class="text-white d-block py-2 px-4">Profile</a>
+            <a href="{{ route('users.index') }}" class="text-white d-block py-2 px-4">Users</a>
         </li>
         <li>
-            <a href="{{ route('settings') }}" class="text-white d-block py-2 px-4">Settings</a>
+            <a href="{{ route('kitchen.index') }}" class="text-white d-block py-2 px-4">Kitchen</a>
         </li>
         <li>
-            <a href="{{ route('logout') }}" class="text-white d-block py-2 px-4">Logout</a>
+            <a href="{{ route('kitchen-menu.index') }}" class="text-white d-block py-2 px-4">Kitchen Menu</a>
+        </li>
+        <li>
+            <a href="{{ route('raw-meat.index') }}" class="text-white d-block py-2 px-4">Raw Meat</a>
+        </li>
+        <li>
+            <a href="{{ route('raw-meat-menu.index') }}" class="text-white d-block py-2 px-4">Raw Meat Menu</a>
+        </li>
+        <li>
+            <a href="{{ route('reviews.index') }}" class="text-white d-block py-2 px-4">Reviews</a>
         </li>
     </ul>
 </div>

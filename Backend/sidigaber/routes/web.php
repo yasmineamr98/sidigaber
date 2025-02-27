@@ -1,28 +1,41 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\KitchenController;
+use App\Http\Controllers\KitchenMenuController;
+use App\Http\Controllers\RawMeatController;
+use App\Http\Controllers\RawMeatMenuController;
+use App\Http\Controllers\ReviewController;
 
-
+// Authentication Routes
 Route::get('/', function () {
     return view('login');
 });
 
-
-
+// Middleware Protected Routes
 Route::middleware(['auth'])->group(function () {
-    // Dashboard route
+    // Dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-    // User management route
-    Route::get('/users', [UserController::class, 'index'])->name('users.index');
-});
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    // Users Routes
+    Route::resource('/users', UserController::class)->except(['destroy']);
+
+    // Kitchen Routes
+    Route::resource('/kitchen', KitchenController::class)->except(['destroy']);
+
+    // Kitchen Menu Routes
+    Route::resource('/kitchen-menu', KitchenMenuController::class)->only(['index']);
+
+    // Raw Meat Routes
+    Route::resource('/raw-meat', RawMeatController::class)->except(['destroy']);
+
+    // Raw Meat Menu Routes
+    Route::resource('/raw-meat-menu', RawMeatMenuController::class)->only(['index']);
+
+    // Reviews Routes
+    Route::resource('/reviews', ReviewController::class)->only(['index']);
 });
 
 require __DIR__.'/auth.php';

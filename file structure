@@ -43,7 +43,24 @@ models user php
 views 
 dashboard blade
 login blade
-sidebar blade
-user/index blade 
-
+sidebar blade [dashboard/admins/kitchen/kitchen menu/raw meat/ raw meat menu/reviews]
+user[index blade /create blade / edit blade/ show blade ]
+kitchen[index blade /create blade / edit blade/ show blade]
+raw meat[index blade /create blade / edit blade/ show blade]
+reviews[index blade ]
+kitchen menu[index blade]
+raw meat menu[index blade]
+dashboard[index blade]
 routes web php
+
+
+please change in the sidebar blad the current tabs and add these sidebar blade [dashboard/users/kitchen/kitchen menu/raw meat/ raw meat menu/reviews] and also delete the current tabs dont leave them and i will provide you with the current sidebar blade
+i want to create these folders and their files blank for these tabs and please give me the correct route for them 
+user[index blade /create blade / edit blade/ show blade ]
+kitchen[index blade /create blade / edit blade/ show blade]
+raw meat[index blade /create blade / edit blade/ show blade]
+reviews[index blade ]
+kitchen menu[index blade]
+raw meat menu[index blade]
+dashboard[index blade]
+and please give me the command to create all these files together and i will provide you the route file to add them
