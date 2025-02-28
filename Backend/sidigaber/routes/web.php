@@ -20,16 +20,16 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     // Users Routes
-    Route::resource('/users', UserController::class)->except(['destroy']);
+    Route::resource('/users', UserController::class);
 
     // Kitchen Routes
-    Route::resource('/kitchen', KitchenController::class)->except(['destroy']);
+    Route::resource('/kitchen', KitchenController::class);
 
     // Kitchen Menu Routes
     Route::resource('/kitchen-menu', KitchenMenuController::class)->only(['index']);
 
     // Raw Meat Routes
-    Route::resource('/raw-meat', RawMeatController::class)->except(['destroy']);
+    Route::resource('/raw-meat', RawMeatController::class);
 
     // Raw Meat Menu Routes
     Route::resource('/raw-meat-menu', RawMeatMenuController::class)->only(['index']);

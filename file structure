@@ -54,13 +54,14 @@ dashboard[index blade]
 routes web php
 
 
-please change in the sidebar blad the current tabs and add these sidebar blade [dashboard/users/kitchen/kitchen menu/raw meat/ raw meat menu/reviews] and also delete the current tabs dont leave them and i will provide you with the current sidebar blade
-i want to create these folders and their files blank for these tabs and please give me the correct route for them 
-user[index blade /create blade / edit blade/ show blade ]
-kitchen[index blade /create blade / edit blade/ show blade]
-raw meat[index blade /create blade / edit blade/ show blade]
-reviews[index blade ]
-kitchen menu[index blade]
-raw meat menu[index blade]
-dashboard[index blade]
-and please give me the command to create all these files together and i will provide you the route file to add them
+Eid El Adha reservation [Name,phone number, address, order & weight / deposit , Total] 
+
+
+-please edit my user controller to create crud operations with validations and my routes for the user crud operations are views/users/ [create,edit,index,show] blades 
+
+I will create the blades later
+
+
+
+
+-create the blades views for these crud operations and please give me the full code for each blade with a proper style

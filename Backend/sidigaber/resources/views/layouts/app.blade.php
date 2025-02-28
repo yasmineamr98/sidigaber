@@ -10,9 +10,15 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <!-- Inside <head> -->
+<link rel="stylesheet" href="{{ asset('vendor/twbs/bootstrap/dist/css/bootstrap.min.css') }}">
+
+
+        <!-- Styles -->
+        @vite(['resources/css/app.css'])
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
@@ -20,7 +26,7 @@
 
             <div class="flex">
                 <!-- Sidebar -->
-                @include('sidebar')
+                @include('sidebar')  
 
                 <!-- Page Content -->
                 <div class="flex-1 ml-[250px] p-6"> 
@@ -33,10 +39,16 @@
                     @endisset
 
                     <main>
-                        {{ $slot }}
+                        @yield('content')
                     </main>
                 </div>
             </div>
         </div>
+
+        @yield('js')
+
+        <!-- Before closing </body> -->
+<script src="{{ asset('vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+
     </body>
 </html>
