@@ -3,11 +3,11 @@
 @section('title', 'Dashboard')
 
 @section('content')
-    <div class="container mx-auto">
+    <div class="container-fluid">
         <div class="row">
             <!-- Users Box -->
             <div class="col-lg-3 col-6">
-                <div class="small-box bg-info">
+                <div class="shadow-lg small-box bg-info">
                     <div class="inner">
                         <h3>{{ $users->count() }}</h3>
                         <p>Users</p>
@@ -20,10 +20,10 @@
                     </a>
                 </div>
             </div>
-            
+
             <!-- New Orders Box -->
             <div class="col-lg-3 col-6">
-                <div class="small-box bg-success">
+                <div class="shadow-lg small-box bg-success">
                     <div class="inner">
                         <h3>120</h3>
                         <p>New Orders</p>
@@ -36,10 +36,42 @@
                     </a>
                 </div>
             </div>
+
+            <!-- Sales Box -->
+            <div class="col-lg-3 col-6">
+                <div class="shadow-lg small-box bg-warning">
+                    <div class="inner">
+                        <h3>85</h3>
+                        <p>Sales</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">
+                        More info <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Revenue Box -->
+            <div class="col-lg-3 col-6">
+                <div class="shadow-lg small-box bg-danger">
+                    <div class="inner">
+                        <h3>$5,430</h3>
+                        <p>Revenue</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">
+                        More info <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        
+
         <!-- Sales Chart -->
-        <div class="card">
+        <div class="mt-4 shadow-lg card">
             <div class="card-header">
                 <h3 class="card-title">Sales Chart</h3>
             </div>
@@ -51,6 +83,7 @@
 @endsection
 
 @section('js')
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var ctx = document.getElementById('salesChart').getContext('2d');
@@ -69,7 +102,21 @@
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false
+                    maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function (tooltipItem) {
+                                    return 'Sales: $' + tooltipItem.raw;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
                 }
             });
         });

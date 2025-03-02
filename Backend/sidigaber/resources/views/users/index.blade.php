@@ -3,16 +3,19 @@
 @section('title', 'Users List')
 
 @section('content')
-<div class="d-flex justify-content-between mb-3">
+<div class="mb-4 d-flex justify-content-between align-items-center">
     <h2>Users List</h2>
     <a href="{{ route('users.create') }}" class="btn btn-primary">Add User</a>
 </div>
 
 @if(session('success'))
-    <div class="alert alert-success">{{ session('success') }}</div>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('success') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
 @endif
 
-<table class="table table-bordered">
+<table class="table table-striped table-hover table-bordered">
     <thead class="table-dark">
         <tr>
             <th>ID</th>
@@ -29,13 +32,13 @@
             <td>{{ $user->name }}</td>
             <td>{{ $user->email }}</td>
             <td>{{ $user->phone_number }}</td>
-            <td>
+            <td class="gap-2 d-flex">
                 <a href="{{ route('users.show', $user) }}" class="btn btn-info btn-sm">View</a>
                 <a href="{{ route('users.edit', $user) }}" class="btn btn-warning btn-sm">Edit</a>
-                <form action="{{ route('users.destroy', $user) }}" method="POST" class="d-inline">
+                <form action="{{ route('users.destroy', $user) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this user?');">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
+                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                 </form>
             </td>
         </tr>
@@ -43,5 +46,9 @@
     </tbody>
 </table>
 
-{{ $users->links() }} <!-- Pagination -->
+<!-- Pagination with custom styling -->
+<div class="d-flex justify-content-center">
+    {{ $users->links('pagination::bootstrap-5') }}
+</div>
+
 @endsection

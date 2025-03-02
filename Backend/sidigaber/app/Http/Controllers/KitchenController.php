@@ -12,10 +12,10 @@ class KitchenController extends Controller
      */
     public function index()
     {
-        $kitchens = Kitchen::all();  // ✅ Make sure this is correct
+        $kitchens = Kitchen::paginate(10);  // ✅ Make sure this is correct
         return view('kitchen.index', compact('kitchens')); // ✅ Passing kitchens, not users
     }
-    
+
 
     /**
      * Show the form for creating a new resource.
