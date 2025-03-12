@@ -34,7 +34,7 @@ class KitchenController extends Controller
         $request->validate([
             'item_name'     => 'required|string|max:255',
             'item_price'    => 'required|numeric|min:0',
-            'item_picture'  => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'item_picture'  => 'required|image|mimes:jpeg,png,jpg,gif',
             'review'        => 'nullable|string',
             'description'   => 'required|string',
         ]);
