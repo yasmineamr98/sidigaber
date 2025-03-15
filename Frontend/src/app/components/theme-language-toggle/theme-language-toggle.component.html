@@ -1,0 +1,24 @@
+<div class="theme-language-toggle">
+  <!-- Theme Toggle -->
+  <button 
+    (click)="toggleTheme()" 
+    class="theme-toggle"
+    aria-label="Toggle Theme"
+  >
+    <span *ngIf="isDarkMode">
+      <i class="fa fa-sun-o"></i> {{ 'BUTTONS.LIGHT_MODE' | translate }}
+    </span>
+    <span *ngIf="!isDarkMode">
+      <i class="fa fa-moon-o"></i> {{ 'BUTTONS.DARK_MODE' | translate }}
+    </span>
+  </button>
+
+  <!-- Language Toggle -->
+  <button 
+    (click)="toggleLanguage()"
+    class="language-toggle"
+    [attr.aria-label]="'Switch Language'"
+  >
+    {{ currentLanguage === 'en' ? ('BUTTONS.ARABIC' | translate) : ('BUTTONS.ENGLISH' | translate) }}
+  </button>
+</div>

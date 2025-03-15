@@ -1,0 +1,196 @@
+{
+  "COMMON": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "CONTACT": "Contact",
+    "MENU": "Menu",
+    "ORDER": "Order",
+    "WELCOME": "Welcome to SidiGaber",
+    "DESCRIPTION": "Services"
+  },
+  "NAVIGATION": {
+    "DASHBOARD": "Dashboard",
+    "PROFILE": "Profile",
+    "SETTINGS": "Settings"
+  },
+  "BUTTONS": {
+    "SUBMIT": "Submit",
+    "CANCEL": "Cancel",
+    "SAVE": "Save",
+    "EDIT": "Edit",
+    "DARK_MODE": "Dark Mode",
+    "LIGHT_MODE": "Light Mode",
+    "ENGLISH": "English",
+    "ARABIC": "العربية",
+    "SEND_MESSAGE": "Send Message"
+  },
+  "HOME": {
+    "HERO_TITLE": "Authentic Culinary Experience",
+    "HERO_SUBTITLE": "Butchery & Kitchen Experience",
+    "FEATURED_SECTION_TITLE": "Our Specialties",
+    "FEATURED_SECTION_DESCRIPTION": "Discover the art of premium meats and culinary excellence. From farm-fresh cuts to exquisite dishes, we bring passion to your plate."
+  },
+  "ABOUT": {
+    "HERO_TITLE": "Our Story",
+    "HERO_SUBTITLE": "A Legacy of Quality and Passion",
+    "OUR_HISTORY_TITLE": "From Tradition to Innovation",
+    "OUR_HISTORY_DESCRIPTION": "Founded in 2010, SidiGaber began as a small family butcher shop with a simple mission: to provide the highest quality meats to our community. What started as a local neighborhood butcher has grown into a culinary destination, blending time-honored butchery techniques with modern culinary innovation.",
+    "TEAM_TITLE": "Meet Our Team",
+    "TEAM": {
+      "HEAD_CHEF_ALT": "Head Chef",
+      "HEAD_CHEF_ROLE": "Head Chef & Culinary Director",
+      "MASTER_BUTCHER_ALT": "Master Butcher",
+      "MASTER_BUTCHER_ROLE": "Master Butcher",
+      "RESTAURANT_MANAGER_ALT": "Restaurant Manager",
+      "RESTAURANT_MANAGER_ROLE": "Restaurant Manager"
+    },
+    "OUR_VALUES_TITLE": "Our Core Values",
+    "OUR_VALUES": [
+      "Quality Above All",
+      "Ethical Sourcing",
+      "Community Connection", 
+      "Culinary Excellence"
+    ]
+  },
+  "CONTACT": {
+    "HERO_TITLE": "Contact SidiGaber",
+    "HERO_SUBTITLE": "Your Culinary Journey Begins with a Conversation",
+    "CONTACT_INFO": {
+      "LOCATION": "Our Location",
+      "PHONE": "Phone Numbers",
+      "EMAIL": "Email Contacts"
+    },
+    "FORM": {
+      "TITLE": "Send Us a Message",
+      "NAME_LABEL": "Full Name",
+      "EMAIL_LABEL": "Email Address",
+      "PHONE_LABEL": "Phone Number (Optional)",
+      "INQUIRY_LABEL": "Inquiry Type",
+      "MESSAGE_LABEL": "Your Message",
+      "INQUIRY_OPTIONS": {
+        "DEFAULT": "Select Inquiry Type",
+        "RESERVATION": "Restaurant Reservation",
+        "CATERING": "Catering Request",
+        "BUTCHER": "Butcher Shop Inquiry",
+        "FEEDBACK": "General Feedback",
+        "OTHER": "Other"
+      }
+    },
+    "BUSINESS_HOURS": {
+      "TITLE": "Our Business Hours",
+      "RESTAURANT": {
+        "TITLE": "Restaurant Hours",
+        "WEEKDAYS": "Monday - Thursday: 11:00 AM - 10:00 PM",
+        "WEEKEND": "Friday - Saturday: 11:00 AM - 11:00 PM",
+        "SUNDAY": "Sunday: Closed"
+      },
+      "BUTCHER_SHOP": {
+        "TITLE": "Butcher Shop Hours",
+        "WEEKDAYS": "Monday - Thursday: 8:00 AM - 8:00 PM",
+        "WEEKEND": "Friday - Saturday: 8:00 AM - 9:00 PM",
+        "SUNDAY": "Sunday: Closed"
+      }
+    }
+  },
+  "KITCHEN": {
+    "TITLE": "Our Kitchen",
+    "DESCRIPTION": "Crafting Culinary Masterpieces",
+    "HERO_TITLE": "Culinary Mastery at SidiGaber",
+    "HERO_SUBTITLE": "Experience the art of meat preparation, where tradition meets innovation",
+    "EXPLORE_MENU": "Explore Our Menu",
+    "MENU_SECTIONS": {
+      "APPETIZERS": "Appetizers",
+      "MAIN_COURSES": "Main Courses",
+      "DESSERTS": "Desserts",
+      "BEVERAGES": "Beverages"
+    },
+    "MENU_ITEMS": {
+      "APPETIZERS": {
+        "ITEM1_NAME": "Meat Tartare",
+        "ITEM1_DESCRIPTION": "Finely chopped premium beef, seasoned with herbs and spices",
+        "ITEM2_NAME": "Charcuterie Board",
+        "ITEM2_DESCRIPTION": "Artisan selection of cured meats and accompaniments"
+      },
+      "MAIN_COURSES": {
+        "ITEM1_NAME": "Prime Ribeye Steak",
+        "ITEM1_DESCRIPTION": "Perfectly grilled, aged ribeye with signature herb butter",
+        "ITEM2_NAME": "Lamb Rack Provençal",
+        "ITEM2_DESCRIPTION": "Herb-crusted lamb rack with roasted Mediterranean vegetables"
+      },
+      "DESSERTS": {
+        "ITEM1_NAME": "Chocolate Mousse",
+        "ITEM1_DESCRIPTION": "Rich, velvety chocolate mousse with caramel drizzle",
+        "ITEM2_NAME": "Seasonal Fruit Tart",
+        "ITEM2_DESCRIPTION": "Delicate pastry filled with fresh seasonal fruits"
+      },
+      "BEVERAGES": {
+        "ITEM1_NAME": "Craft Cocktail",
+        "ITEM1_DESCRIPTION": "Signature meat-inspired cocktail with premium spirits",
+        "ITEM2_NAME": "Artisan Wine Selection",
+        "ITEM2_DESCRIPTION": "Curated wines perfectly paired with our meat dishes"
+      }
+    },
+    "PHILOSOPHY_TITLE": "Our Culinary Philosophy",
+    "PHILOSOPHY_DESCRIPTION": "At SidiGaber, we transform meat into an art form. Our chefs blend traditional techniques with innovative approaches, creating dishes that tell a story of passion, quality, and culinary excellence.",
+    "QUALITY_GUARANTEE": "Exceptional Culinary Standards",
+    "CHEF_GUARANTEE": "Master Chef Craftsmanship",
+    "ORIGIN": {
+      "LOCAL": "Local Sourcing",
+      "IMPORTED": "Premium Imports",
+      "PREMIUM": "Exclusive Selection"
+    }
+  },
+  "RAW_MEAT": {
+    "TITLE": "Our Raw Meat",
+    "HERO_TITLE": "Premium Raw Meat Selection",
+    "HERO_SUBTITLE": "Discover the finest cuts, sourced with passion and precision",
+    "EXPLORE_MEATS": "Explore Our Cuts",
+    "CATEGORIES_TITLE": "Our Meat Categories",
+    "CATEGORIES": {
+      "BEEF": "Premium Beef",
+      "LAMB": "Tender Lamb",
+      "CHICKEN": "Fresh Chicken",
+      "SPECIALTY_CUTS": "Specialty Cuts"
+    },
+    "BEEF_DESCRIPTION": "Expertly selected prime beef cuts, perfect for grilling and roasting",
+    "LAMB_DESCRIPTION": "Succulent lamb from the finest pastures, ideal for gourmet dishes",
+    "CHICKEN_DESCRIPTION": "Farm-fresh chicken, raised with care and commitment to quality",
+    "SPECIALTY_CUTS_DESCRIPTION": "Exclusive and rare cuts for the most discerning culinary enthusiasts",
+    "PHILOSOPHY_TITLE": "Our Sourcing Philosophy",
+    "PHILOSOPHY_DESCRIPTION": "At SidiGaber, we believe in delivering the highest quality meats through sustainable and ethical sourcing practices. Each cut tells a story of tradition, quality, and culinary excellence.",
+    "QUALITY_GUARANTEE": "Highest Quality Standards",
+    "ORIGIN_GUARANTEE": "Traceable Origin",
+    "ORIGIN": {
+      "LOCAL": "Local Source",
+      "IMPORTED": "Imported Selection",
+      "PREMIUM": "Premium Origin"
+    }
+  },
+  "REVIEW": {
+    "TITLE": "Customer Reviews",
+    "SUBMIT_REVIEW": "Submit a Review",
+    "RATING_LABEL": "Your Rating",
+    "COMMENT_LABEL": "Your Comments",
+    "COMMENT_PLACEHOLDER": "Share your experience with SidiGaber",
+    "RATING": "Rating",
+    "STAR": "Star",
+    "STARS": "Stars",
+    "RECENT_REVIEWS": "Recent Reviews",
+    "SAMPLE_REVIEW_1": "SidiGaber has transformed my culinary experience. The quality of their meats is unparalleled, and their kitchen's expertise is truly remarkable.",
+    "SAMPLE_AUTHOR_1": "Ahmed Mohamed",
+    "SAMPLE_REVIEW_2": "As a professional chef, I'm incredibly picky about my meat sources. SidiGaber consistently delivers the highest quality cuts I've ever worked with.",
+    "SAMPLE_AUTHOR_2": "Fatima Hassan",
+    "FORM": {
+      "NAME_LABEL": "Full Name",
+      "EMAIL_LABEL": "Email Address"
+    }
+  },
+  "FOOTER": {
+    "QUICK_LINKS": "Quick Links",
+    "CONTACT_US": "Contact Us",
+    "FOLLOW_US": "Follow Us",
+    "NEWSLETTER": "Subscribe to Our Newsletter",
+    "NEWSLETTER_PLACEHOLDER": "Enter your email address",
+    "NEWSLETTER_BUTTON": "Subscribe"
+  }
+}
