@@ -1,1 +1,82 @@
-<p>review works!</p>
+<div class="review-container">
+  <section class="review-hero">
+    <h1>{{ 'REVIEW.TITLE' | translate }}</h1>
+    <p>Hear What Our Customers Have to Say</p>
+  </section>
+
+  <section class="customer-reviews">
+    <h2>{{ 'REVIEW.RECENT_REVIEWS' | translate }}</h2>
+    <div class="reviews-grid">
+      <div class="review-item card">
+        <div class="review-content">
+          <p>{{ 'REVIEW.SAMPLE_REVIEW_1' | translate }}</p>
+          <div class="reviewer-info">
+            <img src="assets/images/reviewer-1.jpg" alt="Customer Review">
+            <div class="reviewer-details">
+              <h3>{{ 'REVIEW.SAMPLE_AUTHOR_1' | translate }}</h3>
+              <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review-item card">
+        <div class="review-content">
+          <p>{{ 'REVIEW.SAMPLE_REVIEW_2' | translate }}</p>
+          <div class="reviewer-info">
+            <img src="assets/images/reviewer-2.jpg" alt="Customer Review">
+            <div class="reviewer-details">
+              <h3>{{ 'REVIEW.SAMPLE_AUTHOR_2' | translate }}</h3>
+              <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="write-review">
+    <h2>Share Your Experience</h2>
+    <form class="review-form">
+      <div class="form-group">
+        <label for="name">{{ 'REVIEW.FORM.NAME_LABEL' | translate }}</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">{{ 'REVIEW.FORM.EMAIL_LABEL' | translate }}</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label>{{ 'REVIEW.RATING_LABEL' | translate }}</label>
+        <div class="rating-input">
+          <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1">★</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="review-text">{{ 'REVIEW.COMMENT_LABEL' | translate }}</label>
+        <textarea id="review-text" name="review" rows="5" placeholder="{{ 'REVIEW.COMMENT_PLACEHOLDER' | translate }}" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">{{ 'REVIEW.SUBMIT_REVIEW' | translate }}</button>
+    </form>
+  </section>
+</div>

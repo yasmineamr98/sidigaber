@@ -1,1 +1,55 @@
-<p>kitchen works!</p>
+<section class="kitchen-container">
+  <div class="kitchen-hero">
+    <div class="hero-content">
+      <h1>{{ 'KITCHEN.HERO_TITLE' | translate }}</h1>
+      <p>{{ 'KITCHEN.HERO_SUBTITLE' | translate }}</p>
+      <div class="hero-cta">
+        <a href="#menu-sections" class="btn btn-primary">{{ 'KITCHEN.EXPLORE_MENU' | translate }}</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="menu-sections" class="menu-sections">
+    <div class="menu-grid">
+      <div class="menu-section" *ngFor="let section of menuSections">
+        <div class="menu-section-header">
+          <h2>{{ section.title | translate }}</h2>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item" *ngFor="let item of section.items">
+            <div class="menu-item-image">
+              <img [src]="item.image" [alt]="item.name | translate" loading="lazy">
+              <div class="menu-item-overlay">
+                <h3>{{ item.name | translate }}</h3>
+              </div>
+            </div>
+            <div class="menu-item-details">
+              <p>{{ item.description | translate }}</p>
+              <div class="menu-item-footer">
+                <span class="origin">{{ item.origin | translate }}</span>
+                <span class="price">{{ item.price | currency }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-kitchen">
+    <div class="kitchen-description">
+      <h2>{{ 'KITCHEN.PHILOSOPHY_TITLE' | translate }}</h2>
+      <p>{{ 'KITCHEN.PHILOSOPHY_DESCRIPTION' | translate }}</p>
+      <div class="kitchen-guarantees">
+        <div class="guarantee-item">
+          <i class="icon-quality"></i>
+          <span>{{ 'KITCHEN.QUALITY_GUARANTEE' | translate }}</span>
+        </div>
+        <div class="guarantee-item">
+          <i class="icon-chef"></i>
+          <span>{{ 'KITCHEN.CHEF_GUARANTEE' | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

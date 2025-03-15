@@ -1,1 +1,49 @@
-<p>header works!</p>
+<header class="main-header">
+  <div class="header-container">
+    <div class="logo-container">
+      <a routerLink="/" class="logo">
+        <img src="../../assets/images/logo.png" alt="{{ 'COMMON.WELCOME' | translate }}" class="logo-image">
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a routerLink="/home" routerLinkActive="active" class="nav-link">
+            {{ 'COMMON.HOME' | translate }}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/about" routerLinkActive="active" class="nav-link">
+            {{ 'COMMON.ABOUT' | translate }}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/kitchen" routerLinkActive="active" class="nav-link">
+            {{ 'KITCHEN.TITLE' | translate }}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/raw-meat" routerLinkActive="active" class="nav-link">
+            {{ 'RAW_MEAT.TITLE' | translate }}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contact" routerLinkActive="active" class="nav-link">
+            {{ 'COMMON.CONTACT' | translate }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <app-theme-language-toggle class="theme-toggle"></app-theme-language-toggle>
+      
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span class="menu-icon"></span>
+        <span class="menu-icon"></span>
+        <span class="menu-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>

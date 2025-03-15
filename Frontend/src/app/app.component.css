@@ -1,0 +1,12 @@
+.main-content {
+  min-height: calc(100vh - 200px);
+  padding-top: 80px;
+  background-color: var(--background-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 60px;
+  }
+}

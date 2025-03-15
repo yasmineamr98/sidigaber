@@ -1,1 +1,47 @@
-<p>footer works!</p>
+<footer class="main-footer">
+  <div class="footer-content">
+    <div class="footer-section logo-section">
+      <img src="assets/images/logo.png" alt="{{ 'COMMON.WELCOME' | translate }}" class="footer-logo">
+    </div>
+    <div class="footer-section quick-links">
+      <h3>{{ 'FOOTER.QUICK_LINKS' | translate }}</h3>
+      <ul>
+        <li><a href="/home">{{ 'COMMON.HOME' | translate }}</a></li>
+        <li><a href="/about">{{ 'COMMON.ABOUT' | translate }}</a></li>
+        <li><a href="/kitchen">{{ 'KITCHEN.TITLE' | translate }}</a></li>
+        <li><a href="/contact">{{ 'COMMON.CONTACT' | translate }}</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact-info">
+      <h3>{{ 'FOOTER.CONTACT_US' | translate }}</h3>
+      <p>Email: info&#64;sidigaber.com</p>
+      <p>Phone: +20 123 456 7890</p>
+    </div>
+
+    <div class="footer-section social-media">
+      <h3>{{ 'FOOTER.FOLLOW_US' | translate }}</h3>
+      <div class="social-icons">
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Instagram</a>
+        <a href="#" class="social-icon">Twitter</a>
+      </div>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>{{ 'FOOTER.NEWSLETTER' | translate }}</h3>
+      <form class="newsletter-form">
+        <input 
+          type="email" 
+          placeholder="{{ 'FOOTER.NEWSLETTER_PLACEHOLDER' | translate }}"
+          required
+        >
+        <button type="submit">{{ 'FOOTER.NEWSLETTER_BUTTON' | translate }}</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2023 SidiGaber. All Rights Reserved.</p>
+  </div>
+</footer>

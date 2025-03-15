@@ -1,0 +1,329 @@
+:host {
+  display: block;
+  width: 100%;
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  transition: var(--transition-smooth);
+}
+
+.contact-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.contact-hero {
+  text-align: center;
+  padding: 6rem 0;
+  background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+    url('../../assets/images/contact-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.contact-hero .hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-hero h1 {
+  font-size: 3.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.contact-hero p {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  transition: color 0.3s;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-details {
+  grid-column: 1;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.info-card {
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition-smooth);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card .info-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  color: var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+.info-card .info-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.info-card:hover .info-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.info-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.info-card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.contact-form {
+  grid-column: 2;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  transition: var(--transition-smooth);
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.contact-form h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--background-dark);
+  border: 1px solid var(--text-muted);
+  border-radius: 8px;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(var(--accent-color-rgb), 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  color: var(--text-dark);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.submit-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.contact-map {
+  margin-top: 4rem;
+}
+
+.contact-map h2 {
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.business-hours {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.business-hours h2 {
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.hours-card {
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: var(--transition-smooth);
+}
+
+.hours-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.hours-details p {
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hours-details p span:first-child {
+  font-weight: 600;
+}
+
+/* Light Theme Overrides */
+body.light-theme :host {
+  background-color: var(--light-primary-color);
+  color: var(--light-text-color);
+}
+
+body.light-theme .contact-hero h1 {
+  color: var(--secondary-color);
+}
+
+body.light-theme .contact-hero p {
+  color: var(--light-text-color);
+}
+
+body.light-theme .info-card,
+body.light-theme .contact-form,
+body.light-theme .hours-card {
+  background-color: var(--light-secondary-color);
+}
+
+body.light-theme .info-card h3,
+body.light-theme .contact-form h2,
+body.light-theme .hours-card h3 {
+  color: var(--secondary-color);
+}
+
+body.light-theme .info-card .info-icon {
+  color: var(--secondary-color);
+}
+
+body.light-theme .form-group input,
+body.light-theme .form-group textarea,
+body.light-theme .form-group select {
+  background-color: var(--light-primary-color);
+  color: var(--light-text-color);
+  border-color: var(--light-border-color);
+}
+
+@media (max-width: 1200px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-details, .contact-form {
+    grid-column: 1;
+  }
+
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-hero p {
+    font-size: 1.2rem;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .hours-grid {
+    grid-template-columns: 1fr;
+  }
+}

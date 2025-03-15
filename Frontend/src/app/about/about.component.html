@@ -1,1 +1,48 @@
-<p>about works!</p>
+<div class="about-container">
+  <section class="about-hero">
+    <h1>{{ 'ABOUT.HERO_TITLE' | translate }}</h1>
+    <p>{{ 'ABOUT.HERO_SUBTITLE' | translate }}</p>
+  </section>
+
+  <section class="our-history">
+    <div class="history-content">
+      <h2>{{ 'ABOUT.OUR_HISTORY_TITLE' | translate }}</h2>
+      <p>
+        {{ 'ABOUT.OUR_HISTORY_DESCRIPTION' | translate }}
+      </p>
+    </div>
+  </section>
+
+  <section class="our-team">
+    <h2>{{ 'ABOUT.TEAM_TITLE' | translate }}</h2>
+    <div class="team-grid">
+      <div class="team-member card">
+        <img src="assets/images/chef.jpg" alt="{{ 'ABOUT.TEAM.HEAD_CHEF_ALT' | translate }}">
+        <h3>Ahmed Hassan</h3>
+        <p>{{ 'ABOUT.TEAM.HEAD_CHEF_ROLE' | translate }}</p>
+      </div>
+      <div class="team-member card">
+        <img src="assets/images/butcher.jpg" alt="{{ 'ABOUT.TEAM.MASTER_BUTCHER_ALT' | translate }}">
+        <h3>Mohamed Ali</h3>
+        <p>{{ 'ABOUT.TEAM.MASTER_BUTCHER_ROLE' | translate }}</p>
+      </div>
+      <div class="team-member card">
+        <img src="assets/images/manager.jpg" alt="{{ 'ABOUT.TEAM.RESTAURANT_MANAGER_ALT' | translate }}">
+        <h3>Fatima Ibrahim</h3>
+        <p>{{ 'ABOUT.TEAM.RESTAURANT_MANAGER_ROLE' | translate }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-values">
+    <div class="values-content">
+      <h2>{{ 'ABOUT.OUR_VALUES_TITLE' | translate }}</h2>
+      <ul>
+        <li>{{ 'ABOUT.OUR_VALUES.0' | translate }}</li>
+        <li>{{ 'ABOUT.OUR_VALUES.1' | translate }}</li>
+        <li>{{ 'ABOUT.OUR_VALUES.2' | translate }}</li>
+        <li>{{ 'ABOUT.OUR_VALUES.3' | translate }}</li>
+      </ul>
+    </div>
+  </section>
+</div>

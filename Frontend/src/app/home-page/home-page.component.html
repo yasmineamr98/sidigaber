@@ -1,1 +1,49 @@
-<p>home-page works!</p>
+<div class="home-container">
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">{{ 'COMMON.WELCOME' | translate }}</h1>
+      <h2 class="hero-subtitle">{{ 'HOME.HERO_SUBTITLE' | translate }}</h2>
+      <p class="hero-description">
+        {{ 'HOME.FEATURED_SECTION_DESCRIPTION' | translate }}
+      </p>
+      <div class="hero-actions">
+        <a href="/menu" class="btn btn-primary">{{ 'COMMON.MENU' | translate }}</a>
+        <a href="/order" class="btn btn-secondary">{{ 'COMMON.ORDER' | translate }}</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/hero-meat.jpg" alt="{{ 'RAW_MEAT.TITLE' | translate }}">
+    </div>
+  </section>
+
+  <section class="featured-section">
+    <h2 class="section-title">{{ 'HOME.FEATURED_SECTION_TITLE' | translate }}</h2>
+    <div class="featured-grid">
+      <div class="featured-item card">
+        <img src="assets/images/prime-cuts.jpg" alt="{{ 'RAW_MEAT.CATEGORIES.BEEF' | translate }}">
+        <h3>{{ 'RAW_MEAT.CATEGORIES.BEEF' | translate }}</h3>
+        <p>{{ 'RAW_MEAT.DESCRIPTION' | translate }}</p>
+      </div>
+      <div class="featured-item card">
+        <img src="assets/images/kitchen-special.jpg" alt="{{ 'KITCHEN.TITLE' | translate }}">
+        <h3>{{ 'KITCHEN.TITLE' | translate }}</h3>
+        <p>{{ 'KITCHEN.DESCRIPTION' | translate }}</p>
+      </div>
+      <div class="featured-item card">
+        <img src="assets/images/catering.jpg" alt="{{ 'CONTACT.FORM.CATERING' | translate }}">
+        <h3>{{ 'CONTACT.FORM.INQUIRY_OPTIONS.CATERING' | translate }}</h3>
+        <p>{{ 'CONTACT.FORM.INQUIRY_OPTIONS.CATERING' | translate }} {{ 'COMMON.DESCRIPTION' | translate }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-preview">
+    <div class="about-content">
+      <h2 class="section-title">{{ 'ABOUT.HERO_TITLE' | translate }}</h2>
+      <p>
+        {{ 'ABOUT.OUR_HISTORY_DESCRIPTION' | translate }}
+      </p>
+      <a href="/about" class="btn btn-primary">{{ 'COMMON.ABOUT' | translate }}</a>
+    </div>
+  </section>
+</div>

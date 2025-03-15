@@ -1,27 +1,154 @@
-# Frontend
+# SidiGaber - Culinary Meat Experience
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+## Project Overview
 
-## Development server
+SidiGaber is a modern web application for a premium butcher shop and restaurant, offering a comprehensive digital experience that showcases culinary expertise, raw meat selection, and dining options.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 🍖 Key Features
 
-## Code scaffolding
+- **Responsive Design**: Fully responsive website compatible with all devices
+- **Multilingual Support**: English and Arabic translations
+- **Dynamic Navigation**: Intuitive menu and routing
+- **Theme Customization**: Light and dark mode support
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠 Technology Stack
 
-## Build
+- **Frontend**: Angular 17+
+- **Styling**: CSS with CSS Variables
+- **Internationalization**: ngx-translate
+- **Routing**: Angular Router
+- **State Management**: Angular Services
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Project Structure
 
-## Running unit tests
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── theme-language-toggle/
+│   │   └── ...
+│   ├── pages/
+│   │   ├── home/
+│   │   ├── about/
+│   │   ├── kitchen/
+│   │   ├── raw-meat/
+│   │   └── contact/
+│   ├── services/
+│   │   ├── translation.service.ts
+│   │   └── theme.service.ts
+│   ├── header/
+│   └── footer/
+├── assets/
+│   ├── i18n/
+│   │   ├── en.json
+│   │   └── ar.json
+│   └── images/
+│       └── logo.png
+└── styles/
+    └── global.css
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🌐 Pages
 
-## Running end-to-end tests
+1. **Home Page**: 
+   - Hero section with brand introduction
+   - Featured specialties
+   - Quick overview of services
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. **About Page**:
+   - Company history
+   - Team introduction
+   - Core values
 
-## Further help
+3. **Kitchen Page**:
+   - Menu sections
+   - Culinary offerings
+   - Signature dishes
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. **Raw Meat Page**:
+   - Meat selection
+   - Sourcing information
+   - Quality guarantees
+
+5. **Contact Page**:
+   - Contact form
+   - Business hours
+   - Location information
+
+## 🌈 Theming
+
+- CSS Variables for easy theme customization
+- Dark and light mode support
+- Responsive design principles
+
+## 🌍 Internationalization
+
+- Full Arabic and English translation
+- Dynamic language switching
+- Comprehensive translation keys
+
+## 🚀 Performance Optimization
+
+- Lazy loading of modules
+- Efficient routing
+- Minimal bundle size
+- SEO-friendly structure
+
+## 🔧 Development Setup
+
+### Prerequisites
+
+- Node.js 18+
+- Angular CLI
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/sidigaber.git
+
+# Navigate to project directory
+cd sidigaber/Frontend
+
+# Install dependencies
+npm install
+
+# Serve the application
+ng serve
+
+# Build for production
+ng build --configuration production
+```
+
+## 🧪 Testing
+
+```bash
+# Run unit tests
+ng test
+
+# Run end-to-end tests
+ng e2e
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 📞 Contact
+
+Hussein - [Your Email]
+
+Project Link: [https://github.com/yourusername/sidigaber](https://github.com/yourusername/sidigaber)
+
+---
+
+**Built with ❤️ for culinary excellence**

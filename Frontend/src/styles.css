@@ -1,1 +1,365 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  /* 2025 Color Palette */
+  --primary-color: #4A2C2A;       /* Deep mocha (dark mode primary) */
+  --secondary-color: #8B4513;     /* Rich dark brown (dark mode secondary) */
+  --accent-color: #D2691E;        /* Warm terracotta */
+  --background-dark: #121212;     /* Deep dark background */
+  --text-dark: #E0E0E0;           /* Soft light text for dark mode */
+  --text-muted: #888888;          /* Muted text color */
+
+  /* Light Theme Colors */
+  --light-primary-color: #FFFFFF;       /* Pure white background */
+  --light-secondary-color: #F5F5F5;     /* Very light grey */
+  --light-text-color: #333333;          /* Dark grey text */
+  --light-border-color: #E0E0E0;        /* Light grey border */
+
+  /* Typography */
+  --font-primary: 'Neue Haas Grotesk', sans-serif;
+  --font-secondary: 'Playfair Display', serif;
+
+  /* Transitions */
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  /* Dark Theme Colors */
+  --dark-primary-color: #4A2C2A;     /* Deep mocha for dark mode */
+  --dark-secondary-color: #8B4513;   /* Rich dark brown for dark mode */
+  --dark-background-color: #121212;
+  --dark-text-color: #E0E0E0;
+  --dark-border-color: #444444;
+}
+
+/* Global Theme Base */
+body, 
+body.dark-theme,
+body.light-theme {
+  transition: 
+    background-color 0.3s, 
+    color 0.3s, 
+    border-color 0.3s;
+}
+
+/* Dark Theme (Default) */
+body {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+/* Light Theme */
+body.light-theme {
+  background-color: var(--light-primary-color);
+  color: var(--light-text-color);
+}
+
+/* Comprehensive Theme Styling */
+body, 
+body.dark-theme,
+body.light-theme {
+  /* Text Elements */
+  p, span, div, label {
+    transition: color 0.3s;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    transition: color 0.3s;
+  }
+
+  /* Links */
+  a {
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  /* Form Elements */
+  input, 
+  textarea, 
+  select, 
+  button {
+    transition: 
+      background-color 0.3s, 
+      color 0.3s, 
+      border-color 0.3s;
+  }
+
+  /* Cards and Containers */
+  .card, 
+  .container, 
+  .section {
+    transition: 
+      background-color 0.3s, 
+      color 0.3s, 
+      box-shadow 0.3s;
+  }
+}
+
+/* Dark Theme Specific Styles */
+body.dark-theme {
+  /* Text Colors */
+  p, span, div, label {
+    color: var(--dark-text-color);
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-text-color);
+  }
+
+  /* Links */
+  a {
+    color: var(--dark-primary-color);
+  }
+
+  a:hover {
+    color: var(--dark-secondary-color);
+  }
+
+  /* Form Elements */
+  input, 
+  textarea, 
+  select {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+    border-color: var(--dark-border-color);
+  }
+
+  /* Cards and Containers */
+  .card, 
+  .container, 
+  .section {
+    background-color: var(--secondary-color);
+    color: var(--dark-text-color);
+    border-color: var(--dark-border-color);
+  }
+}
+
+/* Light Theme Specific Styles */
+body.light-theme {
+  /* Text Colors */
+  p, span, div, label {
+    color: var(--light-text-color);
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--light-text-color);
+  }
+
+  /* Links */
+  a {
+    color: var(--secondary-color);
+  }
+
+  a:hover {
+    color: var(--primary-color);
+  }
+
+  /* Form Elements */
+  input, 
+  textarea, 
+  select {
+    background-color: var(--light-primary-color);
+    color: var(--light-text-color);
+    border-color: var(--light-border-color);
+  }
+
+  /* Cards and Containers */
+  .card, 
+  .container, 
+  .section {
+    background-color: var(--light-secondary-color);
+    color: var(--light-text-color);
+    border-color: var(--light-border-color);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: var(--font-secondary);
+  color: var(--text-dark);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: var(--text-dark);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: var(--transition-smooth);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: var(--transition-smooth);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+/* Smooth Transitions */
+body, 
+body * {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Optional: Improve readability in dark mode */
+body.dark-theme a {
+  color: var(--dark-primary-color);
+}
+
+body.dark-theme a:hover {
+  color: var(--dark-secondary-color);
+}
+
+/* Ensure icons and other elements adapt to theme */
+body.dark-theme img {
+  filter: brightness(0.8) contrast(1.2);
+}
+
+/* Scrollbar styling for dark mode */
+body.dark-theme::-webkit-scrollbar {
+  width: 12px;
+}
+
+body.dark-theme::-webkit-scrollbar-track {
+  background: var(--dark-border-color);
+}
+
+body.dark-theme::-webkit-scrollbar-thumb {
+  background-color: var(--dark-primary-color);
+  border-radius: 6px;
+}
+
+/* Light Theme (Alternative) */
+body.light-theme {
+  background-color: var(--light-primary-color);
+  color: var(--light-text-color);
+}
+
+/* Light Theme Scrollbar */
+body.light-theme::-webkit-scrollbar-track {
+  background: var(--light-secondary-color);
+}
+
+body.light-theme::-webkit-scrollbar-thumb {
+  background: var(--light-text-color);
+  border-radius: 5px;
+}
+
+/* Typography */
+body.light-theme h1, 
+body.light-theme h2, 
+body.light-theme h3 {
+  color: var(--light-text-color);
+}
+
+/* Buttons */
+body.light-theme .btn {
+  color: var(--light-primary-color);
+}
+
+/* Links */
+a {
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+body.light-theme a {
+  color: var(--secondary-color);
+}
+
+/* Ensure icons and other elements adapt to theme */
+body img {
+  filter: brightness(0.9) contrast(1.1);
+}
+
+body.light-theme img {
+  filter: brightness(1) contrast(1);
+}

@@ -1,1 +1,49 @@
-<p>raw-meat works!</p>
+<section class="raw-meat-container">
+  <div class="raw-meat-hero">
+    <div class="hero-content">
+      <h1>{{ 'RAW_MEAT.HERO_TITLE' | translate }}</h1>
+      <p>{{ 'RAW_MEAT.HERO_SUBTITLE' | translate }}</p>
+      <div class="hero-cta">
+        <a href="#meat-categories" class="btn btn-primary">{{ 'RAW_MEAT.EXPLORE_MEATS' | translate }}</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="meat-categories" class="meat-categories">
+    <h2>{{ 'RAW_MEAT.CATEGORIES_TITLE' | translate }}</h2>
+    <div class="meat-grid">
+      <div class="meat-item" *ngFor="let category of meatCategories">
+        <div class="meat-image-wrapper">
+          <img [src]="category.image" [alt]="category.name | translate" loading="lazy">
+          <div class="meat-overlay">
+            <h3>{{ category.name | translate }}</h3>
+          </div>
+        </div>
+        <div class="meat-description">
+          <p>{{ category.description | translate }}</p>
+          <div class="meat-details">
+            <span class="origin">{{ category.origin | translate }}</span>
+            <span class="price">{{ category.price | currency }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sourcing-philosophy">
+    <div class="philosophy-content">
+      <h2>{{ 'RAW_MEAT.PHILOSOPHY_TITLE' | translate }}</h2>
+      <p>{{ 'RAW_MEAT.PHILOSOPHY_DESCRIPTION' | translate }}</p>
+      <div class="quality-guarantees">
+        <div class="guarantee-item">
+          <i class="icon-quality"></i>
+          <span>{{ 'RAW_MEAT.QUALITY_GUARANTEE' | translate }}</span>
+        </div>
+        <div class="guarantee-item">
+          <i class="icon-origin"></i>
+          <span>{{ 'RAW_MEAT.ORIGIN_GUARANTEE' | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

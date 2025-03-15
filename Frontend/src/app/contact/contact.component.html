@@ -1,1 +1,131 @@
-<p>contact works!</p>
+<div class="contact-container">
+  <section class="contact-hero">
+    <div class="hero-content">
+      <h1>{{ 'CONTACT.HERO_TITLE' | translate }}</h1>
+      <p>{{ 'CONTACT.HERO_SUBTITLE' | translate }}</p>
+    </div>
+  </section>
+
+  <div class="contact-wrapper">
+    <section class="contact-details">
+      <div class="contact-info">
+        <div class="info-card" aria-label="Location Information">
+          <div class="info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+          </div>
+          <h3>{{ 'CONTACT.CONTACT_INFO.LOCATION' | translate }}</h3>
+          <p>123 Butcher Street, New Cairo</p>
+          <p>Culinary District, Food Market Complex</p>
+        </div>
+
+        <div class="info-card" aria-label="Contact Phone Numbers">
+          <div class="info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.5 3.5L20 3c-.56-.56-1.56-.56-2.12 0l-2.32 2.32C15.2 5.94 15 6.41 15 7c0 3.87 3.13 7 7 7 .6 0 1.06-.2 1.47-.58l2.32-2.32c.56-.56.56-1.56 0-2.12l-.5-.5-2.29 2.29-1.41-1.41 2.29-2.29zm-7.32 5.66l-8.46-8.46C4.22.22 3.22.22 2.66.78L.78 2.66c-.56.56-.56 1.56 0 2.12l8.46 8.46 2.94-2.94z"/>
+            </svg>
+          </div>
+          <h3>{{ 'CONTACT.CONTACT_INFO.PHONE' | translate }}</h3>
+          <p>Restaurant: +20 (123) 456-7890</p>
+          <p>Butcher Shop: +20 (123) 456-7891</p>
+        </div>
+
+        <div class="info-card" aria-label="Email Contacts">
+          <div class="info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </div>
+          <h3>{{ 'CONTACT.CONTACT_INFO.EMAIL' | translate }}</h3>
+          <p>General: info&#64;sidigaber.com</p>
+          <p>Reservations: reserve&#64;sidigaber.com</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>{{ 'CONTACT.FORM.TITLE' | translate }}</h2>
+      <form class="review-form" aria-label="Contact Form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">{{ 'CONTACT.FORM.NAME_LABEL' | translate }}</label>
+            <input type="text" id="name" name="name" placeholder="{{ 'CONTACT.FORM.NAME_LABEL' | translate }}" required>
+          </div>
+          <div class="form-group">
+            <label for="email">{{ 'CONTACT.FORM.EMAIL_LABEL' | translate }}</label>
+            <input type="email" id="email" name="email" placeholder="{{ 'CONTACT.FORM.EMAIL_LABEL' | translate }}" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">{{ 'CONTACT.FORM.PHONE_LABEL' | translate }}</label>
+            <input type="tel" id="phone" name="phone" placeholder="{{ 'CONTACT.FORM.PHONE_LABEL' | translate }}">
+          </div>
+          <div class="form-group">
+            <label for="inquiry-type">{{ 'CONTACT.FORM.INQUIRY_LABEL' | translate }}</label>
+            <select id="inquiry-type" name="inquiry-type" required>
+              <option value="">{{ 'CONTACT.FORM.INQUIRY_OPTIONS.DEFAULT' | translate }}</option>
+              <option value="reservation">{{ 'CONTACT.FORM.INQUIRY_OPTIONS.RESERVATION' | translate }}</option>
+              <option value="catering">{{ 'CONTACT.FORM.INQUIRY_OPTIONS.CATERING' | translate }}</option>
+              <option value="butcher">{{ 'CONTACT.FORM.INQUIRY_OPTIONS.BUTCHER' | translate }}</option>
+              <option value="feedback">{{ 'CONTACT.FORM.INQUIRY_OPTIONS.FEEDBACK' | translate }}</option>
+              <option value="other">{{ 'CONTACT.FORM.INQUIRY_OPTIONS.OTHER' | translate }}</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="message">{{ 'CONTACT.FORM.MESSAGE_LABEL' | translate }}</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            rows="5" 
+            placeholder="{{ 'CONTACT.FORM.MESSAGE_LABEL' | translate }}" 
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">{{ 'BUTTONS.SEND_MESSAGE' | translate }}</button>
+      </form>
+    </section>
+  </div>
+
+  <section class="contact-map">
+    <h2>{{ 'CONTACT.BUSINESS_HOURS.TITLE' | translate }}</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789!2d31.2357!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzM5LjgiTiAzMcKwMTQnMDguNiJF!5e0!3m2!1sen!2seg!4v1234567890"
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <section class="business-hours">
+    <h2>{{ 'CONTACT.BUSINESS_HOURS.TITLE' | translate }}</h2>
+    <div class="hours-grid">
+      <div class="hours-card">
+        <h3>{{ 'CONTACT.BUSINESS_HOURS.RESTAURANT.TITLE' | translate }}</h3>
+        <div class="hours-details">
+          <p><span>{{ 'CONTACT.BUSINESS_HOURS.RESTAURANT.WEEKDAYS' | translate }}</span></p>
+          <p><span>{{ 'CONTACT.BUSINESS_HOURS.RESTAURANT.WEEKEND' | translate }}</span></p>
+          <p><span>{{ 'CONTACT.BUSINESS_HOURS.RESTAURANT.SUNDAY' | translate }}</span></p>
+        </div>
+      </div>
+      <div class="hours-card">
+        <h3>{{ 'CONTACT.BUSINESS_HOURS.BUTCHER_SHOP.TITLE' | translate }}</h3>
+        <div class="hours-details">
+          <p><span>{{ 'CONTACT.BUSINESS_HOURS.BUTCHER_SHOP.WEEKDAYS' | translate }}</span></p>
+          <p><span>{{ 'CONTACT.BUSINESS_HOURS.BUTCHER_SHOP.WEEKEND' | translate }}</span></p>
+          <p><span>{{ 'CONTACT.BUSINESS_HOURS.BUTCHER_SHOP.SUNDAY' | translate }}</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
