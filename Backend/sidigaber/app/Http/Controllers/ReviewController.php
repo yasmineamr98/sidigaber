@@ -12,7 +12,8 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $reviews = Review::all();
+        // Paginate reviews with 10 items per page
+        $reviews = Review::paginate(10);
         return view('reviews.index', compact('reviews'));
     }
 

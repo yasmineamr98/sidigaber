@@ -15,6 +15,6 @@ class KitchenSeeder extends Seeder
     public function run()
     {
         // Create 10 fake kitchen items
-        Kitchen::factory(20)->create();
+        Kitchen::factory(100)->create();
     }
 }

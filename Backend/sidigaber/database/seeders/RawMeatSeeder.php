@@ -7,14 +7,12 @@ use Illuminate\Database\Seeder;
 
 class RawMeatSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run()
+    public function run(): void
     {
-        // Create 10 fake raw meat items
-        RawMeat::factory(20)->create();
+        // Create 50 raw meat items with a mix of qualities and availability
+        RawMeat::factory(20)->available()->standard()->create();
+        RawMeat::factory(15)->available()->premium()->create();
+        RawMeat::factory(10)->available()->economy()->create();
+        RawMeat::factory(5)->unavailable()->create();
     }
 }

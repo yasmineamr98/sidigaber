@@ -32,10 +32,13 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/raw-meat', RawMeatController::class);
 
     // Raw Meat Menu Routes
-    Route::resource('/raw-meat-menu', RawMeatMenuController::class)->only(['index']);
+    Route::resource('/raw-meat-menu', RawMeatMenuController::class)->only(['index', 'show']);
 
     // Reviews Routes
     Route::resource('/reviews', ReviewController::class)->only(['index']);
 });
 
-require __DIR__.'/auth.php';
+Route::resource('raw-meats', RawMeatController::class);
+Route::resource('raw-meat-menu', RawMeatMenuController::class)->only(['index', 'show']);
+
+require __DIR__ . '/auth.php';
